@@ -13,5 +13,52 @@
   min-height: 500px;
   height: 50%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+//.heading {
+//  color: #fff;
+//  text-align: center;
+//  letter-spacing: 1.2rem;
+//  font-size: 3rem;
+//  margin-bottom: 11rem;
+//  padding-top: 5rem;
+//}
+
+
+.icon-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 4rem;
+    position: relative;
+
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: flex-end;
+
+    &__logo {
+      fill: #fff;
+      height: 5rem;
+      width: 5rem;
+      position: absolute;
+      top: 2.25rem; right: 2.25rem;
+    }
+    .icon-text {
+      color: #fff;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 12rem;
+      width: 13rem;
+    }
+  }
 }
