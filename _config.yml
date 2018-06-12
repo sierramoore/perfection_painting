@@ -7,14 +7,11 @@ exclude: [".idea/"]
 
 title: Perfection Painting
 email: sierra.v.moore@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: painting company, house painting, commercial painting, wood finishing, wall repair, paint touch up, santa barbara, california painters, best painting companies,
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://www.perfectionpainting.com
-twitter_username: jekyllrb
 github_username:  sierramoore
+repository: https://github.com/sierramoore/perfection_painting
 
 # Build settings
 markdown: kramdown

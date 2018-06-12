@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($light-blue, .8),
+                  rgba($cool-blue, .8)),
+  url("../../assets/images/kitchen.jpg");
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 500px;
+  height: 50%;
+
+
+}
