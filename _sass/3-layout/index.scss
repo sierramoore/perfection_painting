@@ -11,40 +11,39 @@
   background-repeat: no-repeat;
   width: 100vw;
   min-height: 500px;
-  height: 50%;
+  //height: 60%;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  //justify-content: flex-end;
 }
 
-//.heading {
-//  color: #fff;
-//  text-align: center;
-//  letter-spacing: 1.2rem;
-//  font-size: 3rem;
-//  margin-bottom: 11rem;
-//  padding-top: 5rem;
-//}
+.services {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1.2rem;
+  font-size: 3rem;
+  margin-bottom: 11rem;
+  padding-top: 10rem;
+
+}
 
 
 .icon-container {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+
 
   .icon {
     border-radius: 50%;
     border: 2px solid #fff;
     width: 10rem;
     height: 10rem;
-    margin: 0 4rem;
+    margin: 4rem;
     position: relative;
-
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: flex-end;
+    display: flex;
 
     &__logo {
       fill: #fff;
@@ -52,6 +51,10 @@
       width: 5rem;
       position: absolute;
       top: 2.25rem; right: 2.25rem;
+
+      &:hover {
+
+      }
     }
     .icon-text {
       color: #fff;
@@ -60,5 +63,7 @@
       top: 12rem;
       width: 13rem;
     }
+
+
   }
 }

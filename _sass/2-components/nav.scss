@@ -12,20 +12,17 @@
   font-size: 1.4rem;
   list-style: none;
   display: flex;
-  margin: 0;
+  height: 8rem;
   background-color: $cool-blue;
-
 
   &__item {
     position: relative;
+    align-self: center;
+    justify-items: center;
+    height: 100%;
 
     &--logo {
       margin-right: auto;
-    }
-
-
-    &:not(:last-child) {
-      margin-bottom: .5rem;
     }
   }
 
@@ -59,9 +56,11 @@
     text-decoration: none;
     padding: 1.5rem 3rem;
     color: #fff;
+    height: 100%;
 
     display: flex;
     align-items: center;
+    align-content: center;
   }
 
   &__icon {
@@ -71,4 +70,8 @@
     margin-right: 2rem;
   }
 
+}
+
+.co-name {
+  font-size: 2.5rem;
 }
