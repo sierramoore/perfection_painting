@@ -1,0 +1,36 @@
+.form-container {
+  .estimate {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    color: $cool-blue;
+    margin: 3rem auto;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    width: 33%;
+
+
+    &__item {
+      border: none;
+      border-bottom: 3px solid $cool-blue;
+      text-align: center;
+      font-size: 1.6rem;
+      letter-spacing: .2rem;
+
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__logo {
+      width: 2rem;
+      height: 2rem;
+      fill: grey;
+    }
+  }
+}
