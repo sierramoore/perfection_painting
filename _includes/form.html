@@ -1,31 +1,53 @@
+<h1 class="estimate">Request an Estimate</h1>
 <section class="form-container">
-    <h1 class="estimate">Request an Estimate</h1>
 
     <form action="" class="form">
-        <svg class="form__logo">
-            <use xlink:href="../assets/images/sprite.svg#icon-user"></use>
-        </svg>
-        <input type="text" class="form__item" placeholder="Full name">
+        <div class="form__item">
+            <label for="name" class="form__label">
+                <svg class="form__logo">
+                    <use xlink:href="../assets/images/sprite.svg#icon-user"></use>
+                </svg>
+            </label>
+            <input type="text" name="name" class="form__input" placeholder="Full name">
+        </div>
 
-        <svg class="form__logo">
-            <use xlink:href="../assets/images/sprite.svg#icon-location"></use>
-        </svg>
-        <input type="text" class="form__item" placeholder="Location of property">
+        <div class="form__item">
+            <label for="location" class="form__label">
+                <svg class="form__logo">
+                    <use xlink:href="../assets/images/sprite.svg#icon-location"></use>
+                </svg>
+            </label>
+                <input type="text" class="form__input" name="location" placeholder="Location of property">
+        </div>
 
-        <svg class="form__logo">
-            <use xlink:href="../assets/images/sprite.svg#icon-phone"></use>
-        </svg>
-        <input type="text" class="form__item" placeholder="Phone">
+        <div class="form__item">
+            <label for="phone" class="form__label">
+                <svg class="form__logo">
+                    <use xlink:href="../assets/images/sprite.svg#icon-phone"></use>
+                </svg>
+            </label>
+            <input type="text" class="form__input" name="phone" placeholder="Phone">
+        </div>
 
-        <svg class="form__logo">
-            <use xlink:href="../assets/images/sprite.svg#icon-envelop"></use>
-        </svg>
-        <input type="text" class="form__item" placeholder="Email">
 
-        <svg class="form__logo">
-            <use xlink:href="../assets/images/sprite.svg#icon-clipboard"></use>
-        </svg>
-        <input type="text" class="form__item" placeholder="Project details">
+        <div class="form__item">
+            <label for="email" class="form__label">
+                <svg class="form__logo">
+                    <use xlink:href="../assets/images/sprite.svg#icon-envelop"></use>
+                </svg>
+            </label>
+            <input type="text" class="form__input" name="email" placeholder="Email">
+        </div>
 
     </form>
+
+    <div class="form__item form__item--aside">
+        <label for="project" class="form__label--aside">
+            <svg class="form__logo form__logo--aside">
+                <use xlink:href="../assets/images/sprite.svg#icon-clipboard"></use>
+            </svg>
+            <input type="text" class="form__input form__input--aside" name="project" placeholder="Project details">
+        </label>
+
+    </div>
 </section>

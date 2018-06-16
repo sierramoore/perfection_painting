@@ -1,36 +1,92 @@
+.estimate {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  color: $cool-blue;
+  margin: 3rem auto;
+}
 .form-container {
-  .estimate {
-    text-align: center;
-    font-size: 2.5rem;
-    letter-spacing: .2rem;
-    color: $cool-blue;
-    margin: 3rem auto;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
 
   .form {
     display: flex;
     flex-direction: column;
-    margin: 4rem auto;
-    width: 33%;
+    justify-content: center;
+    //align-items: stretch;
+    margin-right: 4rem;
+
+    //align-content: stretch;
+
 
 
     &__item {
-      border: none;
-      border-bottom: 3px solid $cool-blue;
+      display: flex;
+      justify-content: center;
       text-align: center;
       font-size: 1.6rem;
       letter-spacing: .2rem;
 
-
       &:not(:last-child) {
         margin-bottom: 2rem;
+      }
+
+      &--aside {
+        align-self: flex-start;
+      }
+    }
+
+    &__input {
+      width: 25rem;
+      outline: none;
+      padding-left: 1rem;
+      border-left: none;
+      border-right: 1px solid #b4b7bb;
+      border-bottom: 1px solid #b4b7bb;
+      border-top: 1px solid #b4b7bb;
+      border-radius: 3px;
+
+      &:focus {
+        box-shadow: 0 2rem 3rem rgba(black, .1);
+      }
+
+      &--aside {
+        width: 25rem;
+        height: 20rem;
+        border:1px solid #b4b7bb;
+        text-align: center;
+      }
+    }
+
+    &__label {
+      background-color: $light-blue;
+      width: 6rem;
+      padding: 1rem;
+      align-self: center;
+      border-radius: 3px;
+
+      &--aside {
+        background-color: $light-blue;
+        width: 25rem;
+        align-self: center;
+        border-radius: 3px;
       }
     }
 
     &__logo {
       width: 2rem;
       height: 2rem;
-      fill: grey;
+      fill: $cool-blue;
+
+      &--aside {
+        align-self: center;
+        margin: .7rem auto;
+        width: 2.3rem;
+        height: 2.3rem;
+      }
     }
   }
 }
+
+// TODO text wrap and begin at top for aside and submit button
