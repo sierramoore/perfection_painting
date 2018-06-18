@@ -5,15 +5,31 @@
   color: $cool-blue;
   margin: 8rem auto 4rem auto;
 }
+
+.btn {
+  width: 20rem;
+  padding: 1.6rem 2rem;
+  background-color: rgba($light-blue, .7);
+  border: 1px solid $light-blue;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: $cool-blue;
+  font-family: inherit;
+
+  &:hover {
+    background-color: rgba($light-blue, 1);
+  }
+
+}
 .form-section {
   background-image: url("../../assets/images/wood.jpg");
+  background-size: cover;
   //opacity: .6;
   z-index: -1;
-  height: 53rem;
+  height: 63rem;
   padding-top: 5rem;
   margin-top: -10rem;
-
-  margin-bottom: 18rem;
 
   display: flex;
   flex-direction: column;
@@ -23,14 +39,13 @@
 .form-container {
   display: flex;
   justify-content: center;
-  margin: 2rem auto;
-  z-index: 100;
+  margin:  3rem auto 0 auto;
 
   .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 4rem;
+    margin: 0 4rem 4rem 0;
     align-self: center;
 
 

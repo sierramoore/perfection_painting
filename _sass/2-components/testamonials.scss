@@ -11,9 +11,8 @@
           $light-blue);
   opacity: 1;
   transform: skewY(-7deg);
-  height: 45rem;
+  height: 47rem;
   padding-bottom: 5rem;
-  margin-bottom: 2rem;
 
   .clients {
     font-size: 3rem;
@@ -91,12 +90,12 @@
         text-transform: uppercase;
         font-size: 1.7rem;
         margin-bottom: 3px;
-        word-spacing: 3px;
+        word-spacing: 2px;
       }
 
       &__co {
         color: grey;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: center;
       }
     }

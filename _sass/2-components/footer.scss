@@ -1,0 +1,89 @@
+.footer {
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba($light-blue, .8),
+                  rgba($cool-blue, .8)),
+  url("../../assets/images/beach2.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 50rem;
+
+  //display: flex;
+  //justify-content: center;
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__logo {
+      margin: 5rem auto 0 auto;
+      height: 8rem;
+      width: 8rem;
+      fill: white;
+    }
+
+    &__text {
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      letter-spacing: 2px;
+
+      &--small {
+        font-size: 1.4rem;
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+
+  .info-flex {
+    display: flex;
+    justify-content: space-around;
+    //margin: 0 10rem;
+
+    .info-container {
+      display: flex;
+      flex-direction: column;
+
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        text-align: center;
+
+
+        &__icon {
+          align-self: center;
+          width: 3.75rem;
+          height: 3.75rem;
+          fill: white;
+          margin-bottom: 1.5rem;
+        }
+
+        &__primary {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-bottom: .5rem;
+        }
+
+        &__secondary {
+          font-size: 2rem;
+          color: white;
+          text-decoration: none;
+          margin-bottom: 3.5rem;
+        }
+      }
+    }
+  }
+
+  .developer {
+    font-size: 1.2rem;
+    color: $light-blue;
+    text-align: center;
+  }
+}
