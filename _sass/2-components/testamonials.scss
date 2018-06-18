@@ -1,0 +1,104 @@
+
+
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-image: linear-gradient(to bottom,
+          $light-grey,
+          $light-blue);
+  opacity: 1;
+  transform: skewY(-7deg);
+  height: 45rem;
+  padding-bottom: 5rem;
+  margin-bottom: 2rem;
+
+  .clients {
+    font-size: 3rem;
+    color: $cool-blue;
+    text-align: center;
+    transform: skewY(7deg);
+    padding-bottom: 4rem;
+  }
+
+  .card-row {
+    transform: skewY(7deg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-around;
+    //align-items: center;
+    margin: 0 3rem;
+    width: 30rem;
+    height: 25rem;
+    background-color: #fff;
+    box-shadow: 0 2rem 3rem rgba(black, .2);
+    padding: 3rem;
+
+
+
+    border-radius: 1rem;
+
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: -2rem;
+      left: -1rem;
+      line-height: 1;
+      font-size: 20rem;
+      color: #dcdcdc;
+      font-family: sans-serif;
+
+    }
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      text-align: center;
+      z-index: 1;
+      margin-bottom: 2.5rem;
+    }
+
+
+    &__user {
+      display: flex;
+      align-items: center;
+
+      &__img {
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        margin-right: 1rem;
+      }
+
+      &__name {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        margin-bottom: 3px;
+        word-spacing: 3px;
+      }
+
+      &__co {
+        color: grey;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,24 +1,37 @@
 .estimate {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: .2rem;
   color: $cool-blue;
-  margin: 3rem auto;
+  margin: 8rem auto 4rem auto;
+}
+.form-section {
+  background-image: url("../../assets/images/wood.jpg");
+  //opacity: .6;
+  z-index: -1;
+  height: 53rem;
+  padding-top: 5rem;
+  margin-top: -10rem;
+
+  margin-bottom: 18rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .form-container {
   display: flex;
   justify-content: center;
-  margin: 4rem auto;
+  margin: 2rem auto;
+  z-index: 100;
 
   .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //align-items: stretch;
     margin-right: 4rem;
-
-    //align-content: stretch;
-
+    align-self: center;
 
 
     &__item {
@@ -27,6 +40,8 @@
       text-align: center;
       font-size: 1.6rem;
       letter-spacing: .2rem;
+
+      opacity: 1;
 
       &:not(:last-child) {
         margin-bottom: 2rem;
