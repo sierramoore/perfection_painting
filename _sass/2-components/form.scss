@@ -7,7 +7,7 @@
 }
 
 .btn {
-  padding: 1.4rem 6.5rem;
+  padding: 1rem 5rem;
   background-color: rgba($light-blue, .7);
   border: 1px solid $light-blue;
   border-radius: 5px;
@@ -20,6 +20,10 @@
   &:hover {
     background-color: rgba($light-blue, 1);
     transform: translateY(.5rem);
+    box-shadow: 0 2rem 3rem rgba(black, .1);
+  }
+  &:focus {
+    outline: none;
   }
 
 }
@@ -77,6 +81,7 @@
       border-bottom: 1px solid #b4b7bb;
       border-top: 1px solid #b4b7bb;
       border-radius: 3px;
+      word-break: break-all;
 
       &:focus {
         box-shadow: 0 2rem 3rem rgba(black, .1);
@@ -102,6 +107,7 @@
         width: 25rem;
         align-self: center;
         border-radius: 3px;
+        word-break: break-all;
       }
     }
 
@@ -119,5 +125,7 @@
     }
   }
 }
+.form__input--aside { word-break: break-all; }
 
 // TODO text wrap and begin at top for aside and submit button
+// also do another form if need around aside 

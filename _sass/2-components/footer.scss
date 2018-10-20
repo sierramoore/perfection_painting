@@ -9,24 +9,24 @@
   background-repeat: no-repeat;
   height: 40rem;
 
-  //display: flex;
-  //justify-content: center;
 
   .icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 2rem;
 
     &__logo {
-      margin: 5rem auto 0 auto;
+      margin-top: 3rem;
       height: 8rem;
       width: 8rem;
       fill: white;
+      align-self: center;
     }
 
     &__text {
       color: white;
-      font-size: 2.5rem;
+      font-size: 2.1rem;
       text-align: center;
       letter-spacing: 2px;
       font-weight: bold;
@@ -86,8 +86,9 @@
   font-size: 1.4rem;
   color: white;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
   transition: all .7s;
+
   &:hover {
     color: $light-blue;
     font-size: 1.6rem;

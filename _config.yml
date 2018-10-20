@@ -7,9 +7,10 @@ exclude: [".idea/"]
 
 title: Perfection Painting
 email: sierra.v.moore@gmail.com
-description: painting company, house painting, commercial painting, wood finishing, wall repair, paint touch up, santa barbara, california painters, best painting companies,
-baseurl: "" # the subpath of your site, e.g. /blog
-url: http://www.perfectionpainting.com
+description: painting company, house painting, commercial painting, wood finishing, wall repair, paint touch up, santa barbara, california painters, best painting companies
+
+baseurl: "https://sierramoore.github.io/perfection_painting" # the subpath of your site, e.g. /blog
+#url: http://www.perfectionpainting.com
 github_username:  sierramoore
 repository: https://github.com/sierramoore/perfection_painting
 
