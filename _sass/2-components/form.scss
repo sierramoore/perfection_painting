@@ -16,6 +16,7 @@
   color: $cool-blue;
   font-family: inherit;
   transition: all .2s;
+  margin: 1rem;
 
   &:hover {
     background-color: rgba($light-blue, 1);
@@ -32,7 +33,7 @@
   background-size: cover;
   //opacity: .6;
   z-index: -1;
-  height: 63rem;
+  min-height: 63rem;
   padding-top: 5rem;
   margin-top: -10rem;
 
@@ -44,7 +45,14 @@
 .form-container {
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   margin:  3rem auto 0 auto;
+
+  @include respond(column) {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
 
   .form {
     display: flex;
@@ -69,6 +77,9 @@
 
       &--aside {
         align-self: flex-start;
+        @include respond(column) {
+          width: 28rem;
+        }
       }
     }
 

@@ -4,6 +4,10 @@
   justify-content: center;
   margin-bottom: 15rem;
 
+  @include respond(xl-phone) {
+    margin-bottom: 8rem;
+  }
+
   .portfolio {
     font-size: 3rem;
     color: $cool-blue;
@@ -16,12 +20,20 @@
     justify-content: center;
     position: relative;
 
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+
     .image {
       position: relative;
       display: flex;
-      //justify-content: center;
-      //align-items: center;
-      //position: absolute;
 
       &__item {
         width: auto;
@@ -31,6 +43,10 @@
         -webkit-box-reflect: below -1px
         -webkit-gradient(linear, left top, left bottom, from(transparent),
                         color-stop(67%, transparent), to(rgba(250, 250, 250, 0.5)));
+
+        @include respond(tab-port) {
+          -webkit-box-reflect: unset;
+        }
       }
 
       &__center {

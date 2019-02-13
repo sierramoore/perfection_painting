@@ -1,6 +1,3 @@
-
-
-
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -11,7 +8,7 @@
           $light-blue);
   opacity: 1;
   transform: skewY(-7deg);
-  height: 47rem;
+  min-height: 47rem;
   padding-bottom: 5rem;
 
   .clients {
@@ -19,35 +16,40 @@
     color: $cool-blue;
     text-align: center;
     transform: skewY(7deg);
-    padding-bottom: 4rem;
+    padding: 4rem;
   }
 
   .card-row {
     transform: skewY(7deg);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
   }
 
   .card {
     display: flex;
     flex-direction: column;
-    margin: 0 3rem;
     width: 30rem;
-    height: 25rem;
+    //height: 25rem;
     background-color: #fff;
     box-shadow: 0 2rem 3rem rgba(black, .2);
     padding: 3rem;
+    margin: 2rem;
     border-radius: 1rem;
 
     overflow: hidden;
     position: relative;
     transition: all .4s;
 
+    @include respond(column) {
+      margin: 1rem;
+    }
+
     &:hover {
       transform: translateY(-1rem);
     }
-
 
     &::before {
       content: "\201C";
@@ -58,7 +60,6 @@
       font-size: 20rem;
       color: #dcdcdc;
       font-family: sans-serif;
-
     }
 
     &__col {
@@ -73,6 +74,11 @@
       text-align: center;
       z-index: 1;
       margin-bottom: 2.5rem;
+
+      @include respond(xl-phone) {
+        font-size: 1.8rem;
+        margin-bottom: 1.7rem;
+      }
     }
 
 
