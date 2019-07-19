@@ -9,7 +9,7 @@
   opacity: 1;
   transform: skewY(-7deg);
   min-height: 47rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
 
   .clients {
     font-size: 3rem;
@@ -83,8 +83,8 @@
 
 
     &__user {
-      display: flex;
-      align-items: center;
+      //display: flex;
+      //align-items: center;
 
       &__img {
         border-radius: 50%;
@@ -95,6 +95,7 @@
 
       &__name {
         text-transform: uppercase;
+        text-align: center;
         font-size: 1.7rem;
         margin-bottom: 3px;
         word-spacing: 2px;

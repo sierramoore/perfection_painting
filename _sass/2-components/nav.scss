@@ -9,6 +9,10 @@
 }
 
 .side-nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  //opacity: .8;
   font-size: 1.4rem;
   list-style: none;
   display: flex;
@@ -20,6 +24,12 @@
     align-self: center;
     justify-items: center;
     height: 100%;
+
+    @media screen and (max-width: 650px) {
+      &:not(:first-child) {
+        display: none;
+      }
+    }
 
     &--logo {
       margin-right: auto;

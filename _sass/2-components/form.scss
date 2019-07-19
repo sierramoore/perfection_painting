@@ -29,7 +29,7 @@
 
 }
 .form-section {
-  background-image: url("../../assets/images/wood.jpg");
+  background-image: linear-gradient(to right bottom, rgba(white,0.6), rgba(white,0.8)), url("../../assets/images/white.jpg");
   background-size: cover;
   //opacity: .6;
   z-index: -1;
@@ -70,13 +70,16 @@
       letter-spacing: .2rem;
 
       opacity: 1;
+      min-width: 30rem;
 
       &:not(:last-child) {
         margin-bottom: 2rem;
       }
 
       &--aside {
+        @extend .form__input;
         align-self: flex-start;
+
         @include respond(column) {
           width: 28rem;
         }
@@ -115,7 +118,7 @@
 
       &--aside {
         background-color: $light-blue;
-        width: 25rem;
+        width: 100%;
         align-self: center;
         border-radius: 3px;
         word-break: break-all;
