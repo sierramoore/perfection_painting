@@ -72,6 +72,8 @@
       opacity: 1;
       min-width: 30rem;
 
+      padding-left: 0 !important;
+
       &:not(:last-child) {
         margin-bottom: 2rem;
       }
@@ -79,10 +81,7 @@
       &--aside {
         @extend .form__input;
         align-self: flex-start;
-
-        @include respond(column) {
-          width: 28rem;
-        }
+        min-width: 32rem !important;
       }
     }
 
@@ -141,5 +140,13 @@
 }
 .form__input--aside { word-break: break-all; }
 
+
+textarea {
+  resize: none;
+
+  &::placeholder {
+    padding: 1rem;
+  }
+}
 // TODO text wrap and begin at top for aside and submit button
 // also do another form if need around aside 

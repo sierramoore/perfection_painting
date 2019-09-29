@@ -18,7 +18,7 @@
                     <use xlink:href="{{ site.baseurl }}/assets/images/sprite.svg#icon-location"></use>
                 </svg>
             </label>
-                <input type="text" class="form__input" name="location" placeholder="Address of property">
+                <input type="text" class="form__input" name="address" placeholder="Address of property">
         </div>
 
         <div class="form__item">
@@ -40,22 +40,48 @@
             <input type="text" class="form__input" name="email" placeholder="Email">
         </div>
 
+        <div class="form__item form__item--aside">
+            <label for="project" class="form__label--aside">
+                <svg class="form__logo form__logo--aside">
+                    <use xlink:href="../assets/images/sprite.svg#icon-clipboard"></use>
+                </svg>
+                <!--            <input type="text" class="form__input form__input&#45;&#45;aside" name="project" placeholder="Project details">-->
+
+                <textarea placeholder="Project details" cols="46" rows="12" name="project"></textarea>
+            </label>
+        </div>
+
+        <button class="btn" type="submit" id="submit-form">Send</button>
     </form>
-
-
-    <div class="form__item form__item--aside">
-        <label for="project" class="form__label--aside">
-            <svg class="form__logo form__logo--aside">
-                <use xlink:href="../assets/images/sprite.svg#icon-clipboard"></use>
-            </svg>
-            <input type="text" class="form__input form__input--aside" name="project" placeholder="Project details">
-        </label>
-    </div>
-
 </div>
 
 
-    <button class="btn">Send</button>
 
     <div id="contact"></div>
 </section>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
+<script>
+    var $form = $('form#test-form'),
+        url = 'https://script.google.com/macros/s/AKfycbw_BUeeFpf62b48ONCcMBlYEFQrci34nn149yIatleZkm3U6fs/exec';
+
+    $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serializeObject()
+        }).success(
+            // do something
+             console.log('meow')
+        );
+    })
+</script>
