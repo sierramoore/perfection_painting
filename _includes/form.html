@@ -4,40 +4,49 @@
 <div class="form-container">
     <form action="" class="form">
         <div class="form__item">
-            <label for="name" class="form__label">
+            <div class="form__label">
                 <svg class="form__logo">
                     <use xlink:href="{{ site.baseurl }}/assets/images/sprite.svg#icon-user"></use>
                 </svg>
+            </div>
+            <label for="name" class="form__item">
+                <input type="text" name="name" class="form__input" placeholder="Full name">
             </label>
-            <input type="text" name="name" class="form__input" placeholder="Full name">
         </div>
 
         <div class="form__item">
-            <label for="location" class="form__label">
+            <div class="form__label">
                 <svg class="form__logo">
                     <use xlink:href="{{ site.baseurl }}/assets/images/sprite.svg#icon-location"></use>
                 </svg>
-            </label>
+            </div>
+            <label for="location" class="form__item">
                 <input type="text" class="form__input" name="address" placeholder="Address of property">
+            </label>
         </div>
 
         <div class="form__item">
-            <label for="phone" class="form__label">
+            <div class="form__label">
                 <svg class="form__logo">
                     <use xlink:href="{{ site.baseurl }}/assets/images/sprite.svg#icon-phone"></use>
                 </svg>
+            </div>
+            <label for="phone" class="form__item">
+                <input type="number" class="form__input" name="phone" placeholder="Phone">
             </label>
-            <input type="number" class="form__input" name="phone" placeholder="Phone">
+
         </div>
 
 
         <div class="form__item">
-            <label for="email" class="form__label">
+            <div class="form__label">
                 <svg class="form__logo">
                     <use xlink:href="{{ site.baseurl }}/assets/images/sprite2.svg#icon-envelop"></use>
                 </svg>
+            </div>
+            <label for="email" class="form__item">
+                <input type="text" class="form__input" name="email" placeholder="Email">
             </label>
-            <input type="text" class="form__input" name="email" placeholder="Email">
         </div>
 
         <div class="form__item form__item--aside">

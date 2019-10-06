@@ -47,6 +47,9 @@
         &--1 {
           background-position: top;
         }
+        &--3 {
+          min-width: 32rem;
+        }
 
         @include respond(tab-port) {
           -webkit-box-reflect: unset;

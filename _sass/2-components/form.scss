@@ -7,7 +7,8 @@
 }
 
 .btn {
-  padding: 1rem 5rem;
+  max-width: 30rem;
+  padding: 1rem;
   background-color: rgba($light-blue, .7);
   border: 1px solid $light-blue;
   border-radius: 5px;
@@ -64,7 +65,7 @@
 
     &__item {
       display: flex;
-      justify-content: center;
+      //justify-content: center;
       text-align: center;
       font-size: 1.6rem;
       letter-spacing: .2rem;
@@ -87,6 +88,7 @@
 
     &__input {
       width: 25rem;
+      //height: 3rem;
       outline: none;
       padding-left: 1rem;
       border-left: none;
