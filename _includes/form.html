@@ -2,7 +2,7 @@
 <section class="form-section">
     <h1 class="estimate">Request an Estimate</h1>
 <div class="form-container">
-    <form action="" class="form">
+    <form action="" class="form" name="contact">
         <div class="form__item">
             <div class="form__label">
                 <svg class="form__logo">
@@ -78,19 +78,14 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
 <script>
-    var $form = $('form#test-form'),
-        url = 'https://script.google.com/macros/s/AKfycbw_BUeeFpf62b48ONCcMBlYEFQrci34nn149yIatleZkm3U6fs/exec';
 
-    $('#submit-form').on('click', function(e) {
+    // contact form to google spreadsheet //
+    const scriptURL = "https://script.google.com/macros/s/AKfycbw_BUeeFpf62b48ONCcMBlYEFQrci34nn149yIatleZkm3U6fs/exec";
+    const form = document.forms['contact'];
+    form.addEventListener('submit', e => {
         e.preventDefault();
-        var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: $form.serializeObject()
-        }).success(
-            // do something
-             console.log('meow')
-        );
-    })
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+    });
 </script>
