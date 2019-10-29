@@ -3,25 +3,25 @@
   font-size: 3rem;
   letter-spacing: .2rem;
   color: $cool-blue;
-  margin: 8rem auto 4rem auto;
+  margin: 8rem auto 0 auto;
 }
 
 .btn {
   max-width: 30rem;
   padding: 1rem;
-  background-color: rgba($light-blue, .7);
-  border: 1px solid $light-blue;
+  background-color: $cool-blue;
+  //border: 1px solid $light-blue;
   border-radius: 5px;
   font-size: 1.8rem;
   font-weight: bold;
-  color: $cool-blue;
+  color: $light-grey;
   font-family: inherit;
   transition: all .2s;
-  margin: 1rem;
+  //margin: 1rem;
 
   &:hover {
-    background-color: rgba($light-blue, 1);
-    transform: translateY(.5rem);
+    background-color: darken($cool-blue, 4%);
+    transform: translateY(.2rem);
     box-shadow: 0 2rem 3rem rgba(black, .1);
   }
   &:focus {
@@ -48,7 +48,15 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin:  3rem auto 0 auto;
+  margin:  3rem auto;
+
+  //background-image: linear-gradient(to bottom right, $light-grey, $light-blue);
+  background-color: $light-grey;
+  padding: 3rem 6rem;
+  border-radius: 4px;
+  box-shadow: 0 1rem 2rem rgba(black, .07);
+
+  opacity: 1;
 
   @include respond(column) {
     flex-direction: column;
@@ -59,7 +67,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 4rem;
     align-self: center;
 
 
@@ -111,14 +118,14 @@
     }
 
     &__label {
-      background-color: $light-blue;
+      background-color: $cool-blue;
       width: 6rem;
       padding: 1rem;
       align-self: center;
       border-radius: 3px;
 
       &--aside {
-        background-color: $light-blue;
+        background-color: $cool-blue;
         width: 100%;
         align-self: center;
         border-radius: 3px;
@@ -129,7 +136,7 @@
     &__logo {
       width: 2rem;
       height: 2rem;
-      fill: $cool-blue;
+      fill: $light-grey;
 
       &--aside {
         align-self: center;
@@ -145,10 +152,9 @@
 
 textarea {
   resize: none;
+  max-width: 30rem;
 
   &::placeholder {
     padding: 1rem;
   }
 }
-// TODO text wrap and begin at top for aside and submit button
-// also do another form if need around aside 

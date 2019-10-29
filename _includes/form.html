@@ -1,7 +1,7 @@
 
 <section class="form-section">
     <h1 class="estimate">Request an Estimate</h1>
-<div class="form-container">
+<div class="form-container" id="form-container">
     <form action="" class="form" name="contact">
         <div class="form__item">
             <div class="form__label">
@@ -88,4 +88,12 @@
         .then(response => console.log('Success!', response))
     .catch(error => console.error('Error!', error.message))
     });
+
+
+    const formContainer =document.getElementById('form-container');
+    const btnClick =document.getElementById('submit-form');
+
+    btnClick.onclick = () => {
+        btnClick.innerText = "Thank  you";
+    };
 </script>
