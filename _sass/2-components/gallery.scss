@@ -4,6 +4,8 @@
   justify-content: center;
   margin-bottom: 15rem;
 
+  //background-image: linear-gradient(to right top, rgba(white,0.8), rgba(white,0.95)), url("../../assets/images/wood.jpg");
+
   @include respond(xl-phone) {
     margin-bottom: 8rem;
   }

@@ -30,7 +30,7 @@
 
 }
 .form-section {
-  background-image: linear-gradient(to right bottom, rgba(white,0.6), rgba(white,0.8)), url("../../assets/images/white.jpg");
+  background-image: linear-gradient(to right top, rgba(white,0.8), rgba(white,0.95)), url("../../assets/images/wood.jpg");
   background-size: cover;
   //opacity: .6;
   z-index: -1;
@@ -49,6 +49,8 @@
   align-content: center;
   align-items: center;
   margin:  3rem auto;
+
+  width: 80%;
 
   //background-image: linear-gradient(to bottom right, $light-grey, $light-blue);
   background-color: $light-grey;
@@ -72,7 +74,7 @@
 
     &__item {
       display: flex;
-      //justify-content: center;
+      justify-content: center;
       text-align: center;
       font-size: 1.6rem;
       letter-spacing: .2rem;
@@ -87,9 +89,16 @@
       }
 
       &--aside {
-        @extend .form__input;
-        align-self: flex-start;
-        min-width: 32rem !important;
+        //@extend .form__input;
+        //align-self: flex-end;
+        //min-width: 32rem !important;
+        //float:right;
+
+        &::before {
+          background-color: $cool-blue;
+          width: 100%;
+          min-width: 30rem;
+        }
       }
     }
 
@@ -109,12 +118,12 @@
         box-shadow: 0 2rem 3rem rgba(black, .1);
       }
 
-      &--aside {
-        width: 25rem;
-        height: 20rem;
-        border:1px solid #b4b7bb;
-        text-align: center;
-      }
+      //&--aside {
+      //  width: 25rem;
+      //  height: 20rem;
+      //  border:1px solid #b4b7bb;
+      //  text-align: center;
+      //}
     }
 
     &__label {
@@ -130,6 +139,7 @@
         align-self: center;
         border-radius: 3px;
         word-break: break-all;
+        border: none !important;
       }
     }
 
