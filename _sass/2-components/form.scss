@@ -3,11 +3,15 @@
   font-size: 3rem;
   letter-spacing: .2rem;
   color: $cool-blue;
-  margin: 8rem auto 0 auto;
+  //margin: 8rem auto 0 auto;
+  margin-bottom: 4rem;
 }
 
 .btn {
   max-width: 30rem;
+  min-width: 20rem;
+
+
   padding: 1rem;
   background-color: $cool-blue;
   //border: 1px solid $light-blue;
@@ -17,7 +21,18 @@
   color: $light-grey;
   font-family: inherit;
   transition: all .2s;
-  //margin: 1rem;
+
+  margin-left: 25%;
+
+  @include respond(tab-land) {
+    margin-left: 20%;
+    width: 100%;
+  }
+
+  @include respond(tab-port) {
+    margin-left: 0;
+  }
+
 
   &:hover {
     background-color: darken($cool-blue, 4%);
@@ -29,142 +44,324 @@
   }
 
 }
-.form-section {
-  background-image: linear-gradient(to right top, rgba(white,0.8), rgba(white,0.95)), url("../../assets/images/wood.jpg");
-  background-size: cover;
-  //opacity: .6;
-  z-index: -1;
-  min-height: 63rem;
-  padding-top: 5rem;
-  margin-top: -10rem;
+//.form-section {
+//  background-image: linear-gradient(to right top, rgba(white,0.8), rgba(white,0.95)), url("../../assets/images/wood.jpg");
+//  background-size: cover;
+//  //opacity: .6;
+//  z-index: -1;
+//  min-height: 63rem;
+//  padding-top: 5rem;
+//  margin-top: -10rem;
+//
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
+//  align-items: center;
+//}
+//.form-container {
+//  display: flex;
+//  justify-content: center;
+//  align-content: center;
+//  align-items: center;
+//  margin:  3rem auto;
+//
+//  width: 80%;
+//
+//  //background-image: linear-gradient(to bottom right, $light-grey, $light-blue);
+//  background-color: $light-grey;
+//  padding: 3rem 6rem;
+//  border-radius: 4px;
+//  box-shadow: 0 1rem 2rem rgba(black, .07);
+//
+//  opacity: 1;
+//
+//  @include respond(column) {
+//    flex-direction: column;
+//    margin-bottom: 2rem;
+//  }
+//
+//  .form {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-self: center;
+//
+//
+//    &__item {
+//      display: flex;
+//      justify-content: center;
+//      text-align: center;
+//      font-size: 1.6rem;
+//      letter-spacing: .2rem;
+//
+//      opacity: 1;
+//      //min-width: 30rem;
+//
+//      padding-left: 0 !important;
+//
+//      &:not(:last-child) {
+//        margin-bottom: 2rem;
+//      }
+//
+//      &--aside {
+//        //@extend .form__input;
+//        //align-self: flex-end;
+//        //min-width: 32rem !important;
+//        //float:right;
+//
+//        &::before {
+//          background-color: $cool-blue;
+//          width: 100%;
+//          min-width: 30rem;
+//        }
+//      }
+//    }
+//
+//    &__input {
+//      width: 25rem;
+//      //height: 3rem;
+//      outline: none;
+//      padding-left: 1rem;
+//      border-left: none;
+//      border-right: 1px solid #b4b7bb;
+//      border-bottom: 1px solid #b4b7bb;
+//      border-top: 1px solid #b4b7bb;
+//      border-radius: 3px;
+//      word-break: break-all;
+//
+//      &:focus {
+//        box-shadow: 0 2rem 3rem rgba(black, .1);
+//      }
+//
+//      //&--aside {
+//      //  width: 25rem;
+//      //  height: 20rem;
+//      //  border:1px solid #b4b7bb;
+//      //  text-align: center;
+//      //}
+//    }
+//
+//    &__label {
+//      background-color: $cool-blue;
+//      width: 6rem;
+//      padding: 1rem;
+//      align-self: center;
+//      border-radius: 3px;
+//
+//      &--aside {
+//        background-color: $cool-blue;
+//        width: 100%;
+//        align-self: center;
+//        border-radius: 3px;
+//        word-break: break-all;
+//        border: none !important;
+//      }
+//    }
+//
+//    &__logo {
+//      width: 2rem;
+//      height: 2rem;
+//      fill: $light-grey;
+//
+//      &--aside {
+//        align-self: center;
+//        margin: .7rem auto;
+//        width: 2.3rem;
+//        height: 2.3rem;
+//      }
+//    }
+//  }
+//}
+//.form__input--aside { word-break: break-all; }
+//
+//
+//textarea {
+//  resize: none;
+//  max-width: 30rem;
+//
+//  &::placeholder {
+//    padding: 1rem;
+//  }
+//}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin:  3rem auto;
 
-  width: 80%;
-
-  //background-image: linear-gradient(to bottom right, $light-grey, $light-blue);
-  background-color: $light-grey;
-  padding: 3rem 6rem;
-  border-radius: 4px;
-  box-shadow: 0 1rem 2rem rgba(black, .07);
-
-  opacity: 1;
-
-  @include respond(column) {
-    flex-direction: column;
+.form {
+  &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(white, .8);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .3s;
 
-
-    &__item {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      font-size: 1.6rem;
-      letter-spacing: .2rem;
-
-      opacity: 1;
-      //min-width: 30rem;
-
-      padding-left: 0 !important;
-
-      &:not(:last-child) {
-        margin-bottom: 2rem;
-      }
-
-      &--aside {
-        //@extend .form__input;
-        //align-self: flex-end;
-        //min-width: 32rem !important;
-        //float:right;
-
-        &::before {
-          background-color: $cool-blue;
-          width: 100%;
-          min-width: 30rem;
-        }
-      }
+    @include respond(tab-port) {
+      width: 100%;
     }
 
-    &__input {
-      width: 25rem;
-      //height: 3rem;
+    &:focus {
       outline: none;
-      padding-left: 1rem;
-      border-left: none;
-      border-right: 1px solid #b4b7bb;
-      border-bottom: 1px solid #b4b7bb;
-      border-top: 1px solid #b4b7bb;
-      border-radius: 3px;
-      word-break: break-all;
-
-      &:focus {
-        box-shadow: 0 2rem 3rem rgba(black, .1);
-      }
-
-      //&--aside {
-      //  width: 25rem;
-      //  height: 20rem;
-      //  border:1px solid #b4b7bb;
-      //  text-align: center;
-      //}
+      box-shadow: 0 1rem 2rem rgba(black, .1);
+      border-bottom: 3px solid $cool-blue;
     }
 
-    &__label {
-      background-color: $cool-blue;
-      width: 6rem;
-      padding: 1rem;
-      align-self: center;
-      border-radius: 3px;
-
-      &--aside {
-        background-color: $cool-blue;
-        width: 100%;
-        align-self: center;
-        border-radius: 3px;
-        word-break: break-all;
-        border: none !important;
-      }
+    &:focus:invalid {
+      border-bottom: 3px solid $invalid-color;
     }
 
-    &__logo {
-      width: 2rem;
-      height: 2rem;
-      fill: $light-grey;
+    &::-webkit-input-placeholder {
+      color: #4a4a4a;
+    }
+  }
 
-      &--aside {
-        align-self: center;
-        margin: .7rem auto;
-        width: 2.3rem;
-        height: 2.3rem;
-      }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
+textarea:focus:invalid {
+  border-bottom: 3px solid $invalid-color;
+}
+.form__logo {
+  width: 2rem;
+  height: 2rem;
+  fill: silver;
+  float: right;
+  margin: 6rem;
+  margin-top: -3.5rem;
+
+}
+.section-book {
+  padding: 15rem 0;
+  //background-image: linear-gradient(to right bottom, white, black);
+  //background-image: linear-gradient(to right top, rgba(white,0.8), rgba(white,0.95)), url("../../assets/images/wood.jpg");
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.book {
+  background-image: linear-gradient(105deg,
+          rgba(white, .9) 0%,
+          rgba(white, .9) 57%,
+          transparent 50%) ,
+  url(../../assets/images/kitchen.jpg);
+  background-size: 100%;
+  background-position: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(black, .2);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(105deg,
+            rgba(white, .9) 0%,
+            rgba(white, .9) 65%,
+            transparent 65%) ,
+    url(../../assets/images/kitchen.jpg);
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right,
+            rgba(white, .9) 0%,
+            rgba(white, .9) 100%),
+    url(../../assets/images/kitchen.jpg);
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
     }
   }
 }
-.form__input--aside { word-break: break-all; }
 
 
-textarea {
-  resize: none;
-  max-width: 30rem;
+///
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
 
-  &::placeholder {
-    padding: 1rem;
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  }
+
+  .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+  }
+
+  .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+  }
+
+  .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+  }
+
 }

@@ -1,3 +1,21 @@
 $cool-blue: #0B3E7F;
 $light-blue: #5BBAFF;
 $light-grey: #f1f1f1;
+
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+$invalid-color: #ff7b78;
+
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
