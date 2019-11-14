@@ -102,3 +102,10 @@
     box-shadow: 0 2rem 3rem rgba(black, .2);
   }
 }
+
+//remove arrow for type number
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

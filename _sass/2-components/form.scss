@@ -44,146 +44,6 @@
   }
 
 }
-//.form-section {
-//  background-image: linear-gradient(to right top, rgba(white,0.8), rgba(white,0.95)), url("../../assets/images/wood.jpg");
-//  background-size: cover;
-//  //opacity: .6;
-//  z-index: -1;
-//  min-height: 63rem;
-//  padding-top: 5rem;
-//  margin-top: -10rem;
-//
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
-//}
-//.form-container {
-//  display: flex;
-//  justify-content: center;
-//  align-content: center;
-//  align-items: center;
-//  margin:  3rem auto;
-//
-//  width: 80%;
-//
-//  //background-image: linear-gradient(to bottom right, $light-grey, $light-blue);
-//  background-color: $light-grey;
-//  padding: 3rem 6rem;
-//  border-radius: 4px;
-//  box-shadow: 0 1rem 2rem rgba(black, .07);
-//
-//  opacity: 1;
-//
-//  @include respond(column) {
-//    flex-direction: column;
-//    margin-bottom: 2rem;
-//  }
-//
-//  .form {
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    align-self: center;
-//
-//
-//    &__item {
-//      display: flex;
-//      justify-content: center;
-//      text-align: center;
-//      font-size: 1.6rem;
-//      letter-spacing: .2rem;
-//
-//      opacity: 1;
-//      //min-width: 30rem;
-//
-//      padding-left: 0 !important;
-//
-//      &:not(:last-child) {
-//        margin-bottom: 2rem;
-//      }
-//
-//      &--aside {
-//        //@extend .form__input;
-//        //align-self: flex-end;
-//        //min-width: 32rem !important;
-//        //float:right;
-//
-//        &::before {
-//          background-color: $cool-blue;
-//          width: 100%;
-//          min-width: 30rem;
-//        }
-//      }
-//    }
-//
-//    &__input {
-//      width: 25rem;
-//      //height: 3rem;
-//      outline: none;
-//      padding-left: 1rem;
-//      border-left: none;
-//      border-right: 1px solid #b4b7bb;
-//      border-bottom: 1px solid #b4b7bb;
-//      border-top: 1px solid #b4b7bb;
-//      border-radius: 3px;
-//      word-break: break-all;
-//
-//      &:focus {
-//        box-shadow: 0 2rem 3rem rgba(black, .1);
-//      }
-//
-//      //&--aside {
-//      //  width: 25rem;
-//      //  height: 20rem;
-//      //  border:1px solid #b4b7bb;
-//      //  text-align: center;
-//      //}
-//    }
-//
-//    &__label {
-//      background-color: $cool-blue;
-//      width: 6rem;
-//      padding: 1rem;
-//      align-self: center;
-//      border-radius: 3px;
-//
-//      &--aside {
-//        background-color: $cool-blue;
-//        width: 100%;
-//        align-self: center;
-//        border-radius: 3px;
-//        word-break: break-all;
-//        border: none !important;
-//      }
-//    }
-//
-//    &__logo {
-//      width: 2rem;
-//      height: 2rem;
-//      fill: $light-grey;
-//
-//      &--aside {
-//        align-self: center;
-//        margin: .7rem auto;
-//        width: 2.3rem;
-//        height: 2.3rem;
-//      }
-//    }
-//  }
-//}
-//.form__input--aside { word-break: break-all; }
-//
-//
-//textarea {
-//  resize: none;
-//  max-width: 30rem;
-//
-//  &::placeholder {
-//    padding: 1rem;
-//  }
-//}
-
 
 .form {
   &__group:not(:last-child) {
@@ -251,12 +111,12 @@ textarea:focus:invalid {
 
 }
 .section-book {
-  padding: 15rem 0;
+  padding: 8rem 0;
   //background-image: linear-gradient(to right bottom, white, black);
   //background-image: linear-gradient(to right top, rgba(white,0.8), rgba(white,0.95)), url("../../assets/images/wood.jpg");
 
   @include respond(tab-port) {
-    padding: 10rem 0;
+    padding: 8rem 0;
   }
 }
 
