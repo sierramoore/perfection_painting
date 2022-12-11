@@ -1,0 +1,17 @@
+current directory: /Users/sierramoore/Websites/perfection_painting/vendor/bundle bundle install --path vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/sierramoore/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/sierramoore/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20221211-24756-a7np0u.rb extconf.rb
+creating Makefile
+
+current directory: /Users/sierramoore/Websites/perfection_painting/vendor/bundle bundle install --path vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\= clean
+
+current directory: /Users/sierramoore/Websites/perfection_painting/vendor/bundle bundle install --path vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\=
+compiling ruby_http_parser.c
+clang: error: unsupported option '--path'; did you mean '-rpath'?
+clang: error: no such file or directory: 'bundle'; did you mean '-bundle'?
+clang: error: no such file or directory: 'install'
+clang: error: no such file or directory: 'vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser'
+make: *** [ruby_http_parser.o] Error 1
+
+make failed, exit code 2

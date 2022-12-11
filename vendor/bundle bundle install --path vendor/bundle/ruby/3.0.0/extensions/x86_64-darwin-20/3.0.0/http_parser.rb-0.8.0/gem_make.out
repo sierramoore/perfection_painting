@@ -1,0 +1,17 @@
+current directory: /Users/sierramoore/Websites/perfection_painting/vendor/bundle bundle install --path vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/Users/sierramoore/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/sierramoore/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20221211-31589-a5lgu3.rb extconf.rb
+creating Makefile
+
+current directory: /Users/sierramoore/Websites/perfection_painting/vendor/bundle bundle install --path vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= clean
+
+current directory: /Users/sierramoore/Websites/perfection_painting/vendor/bundle bundle install --path vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\=
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/sierramoore/Websites/perfection_painting/vendor/bundle bundle install --path vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 ruby_http_parser.bundle ./.gem.20221211-31589-eb2hrc
